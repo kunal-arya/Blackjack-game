@@ -13,21 +13,19 @@
         <h1 class="title">Blackjack</h1>
         <div class="column">
             <h2 class="main-heading dealer-heading">Dealer</h2>
-            <div class="cards-placeholder dealer-cards">
-                <img src="./cards/10-C.png" alt="">
-                <img src="./cards/10-C.png" alt="">
-
+            <p data-dealer-sum></p>
+            <div class="cards-placeholder dealer-cards" data-dealer-card>
+                <img data-hidden src="./cards/back/BACK.png" alt="back of the card">
             </div>
         </div>
-        <div class="result"></div>
+            <p data-result ></p>
         <div class="column">
             <h2 class="main-heading">Your</h2>
-            <div class="cards-placeholder your-cards">
-                <img src="./cards/10-C.png" alt="">
-                <img src="./cards/10-C.png" alt="">
+            <p data-your-sum ></p>
+            <div class="cards-placeholder your-cards" data-your-cards >
             </div>
-            <button class="btn" id="hit">HIT</button>
-            <button class="btn" id="stay">STAY</button>
+            <button class="btn" data-hit-btn >HIT</button>
+            <button class="btn" data-stay-btn >STAY</button>
         </div>
     </div>
 </body>
